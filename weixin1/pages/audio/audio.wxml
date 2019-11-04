@@ -1,0 +1,77 @@
+<!--pages/audio/audio.wxml-->
+<login bindlogined="afterLogin"></login>
+<view>
+<view class="view-style-1">
+  <text data-id="0" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 0 ? 'tui-active' : ''}}">未支付</text>
+  <text data-id="1" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 1 ? 'tui-active' : ''}}">未使用</text>
+  <text data-id="2" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 2 ? 'tui-active' : ''}}">已完成</text>
+  <text data-id="3" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 3 ? 'tui-active' : ''}}">已取消</text>
+ </view>
+
+
+<view>
+<view class="tui-list-box {{index == 0 ? '' : 'tui-hide'}}">
+  <view class="view-style-2" data-id="{{item.Id}}"  bindtap="dingdan" wx:for="{{arr}}">
+  <image src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+  <view style="float:left">
+  <text style="font-size: 28rpx;color:#000000">{{item.Title}}</text>
+  <text>张数：{{item.Quantity}}</text>
+  <text>总价：￥{{item.Total}}</text>
+  </view>
+  <view>
+  <text>未付款</text>
+  <button>付款</button>
+  </view>
+  
+  </view>
+  <view class="zhuangtai" wx-if="{{arr==''}}">---查询不到订单---</view>
+</view>
+<view class="tui-list-box {{index == 1 ? '' : 'tui-hide'}}">
+<view class="view-style-2" data-id="{{item.Id}}"  bindtap="dingdan" wx:for="{{arr}}">
+  <image src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+  <view style="float:left">
+  <text style="font-size: 28rpx;color:#000000">{{item.Title}}</text>
+  <text>张数：{{item.Quantity}}</text>
+  <text>总价：￥{{item.Total}}</text>
+  </view>
+  <view>
+  <text>已付款</text>
+  <button>使用</button>
+  </view>
+  </view>
+  <view class="zhuangtai" wx-if="{{arr==''}}">---查询不到订单---</view>
+</view>
+<view class="tui-list-box {{index == 2 ? '' : 'tui-hide'}}">
+<view class="view-style-2" data-id="{{item.Id}}"  bindtap="dingdan" wx:for="{{arr}}">
+  <image src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+  <view style="float:left">
+  <text style="font-size: 28rpx;color:#000000">{{item.Title}}</text>
+  <text>张数：{{item.Quantity}}</text>
+  <text>总价：￥{{item.Total}}</text>
+  </view>
+  <view>
+  <text>已完成</text>
+  <button>查看</button>
+  </view>
+  </view>
+  <view class="zhuangtai" wx-if="{{arr==''}}">---查询不到订单---</view>
+</view>
+<view class="tui-list-box {{index == 3 ? '' : 'tui-hide'}}">
+<view class="view-style-2" data-id="{{item.Id}}"  bindtap="dingdan" wx:for="{{arr}}">
+  <image src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+  <view style="float:left">
+  <text style="font-size: 28rpx;color:#000000">{{item.Title}}</text>
+  <text>张数：{{item.Quantity}}</text>
+  <text>总价：￥{{item.Total}}</text>
+  </view>
+  <view>
+  <text>已取消</text>
+  <button>查看</button>
+  </view>
+  </view>
+  <view class="zhuangtai" wx-if="{{arr==''}}">---查询不到订单---</view>
+
+</view>
+</view>
+
+</view>

@@ -1,0 +1,63 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<view wx:for="{{xiangqing}}" >
+<image src="{{'http://localhost:3000'+item.Src}}" class="slide-image" mode="aspectFill"/>
+<view class="vw-style-1">
+<text>{{item.Title}}</text>
+<view>
+
+<view >
+<image src="/img/share-s.png"></image>
+<text>分享</text>
+</view>
+<view style="margin-right: 40rpx">
+<image src="/img/kefu.png"></image>
+<text>客服</text>
+</view>
+</view>
+</view>
+<view class="vw-style-2">
+<block wx:if="{{item.ShopAddress!=''}}">
+<image  src="/img/biaoji.png"></image>
+<text data-name="{{item.Title}}" data-shuju="{{item.ShopAddress}}" data-lat="{{item.Lat}}" data-log="{{item.Long}}" bindtap="ditu">{{item.ShopAddress}}</text>
+<text class="text">></text>
+</block>
+<block wx:if="{{item.ShopAddress==''}}">
+<text>--用户未填写详细地址--</text>
+</block>
+</view>
+
+<view >
+<view class="vw-style-3">
+<text>门票列表</text>
+</view>
+<view class="vw-style-4">
+<view style="float: left;">
+<block wx:if="{{item.ShopName!=''}}">
+<text>{{item.ShopName}}</text>
+</block>
+<block wx:if="{{item.ShopName==''}}">
+<text>--用户未填写--</text>
+</block>
+<text style="display: block;font-size: 25rpx;margin-top: 20rpx;color: rgb(211, 211, 211);">余票：{{item.Stock}}</text>
+</view>
+<view >
+<text style="color:red">￥{{item.Price}}</text>
+<button data-id="{{item.Id}}" data-price="{{item.Price}}" data-name="{{item.Title}}"  bindtap="xiadan">立即购买</button>
+</view>
+</view>
+</view>
+
+<view>
+<view class="vw-style-5"><text>购票须知</text></view>
+<view class="vw-style-6"><text>预定须知：{{item.Content}}</text> 
+
+</view>
+</view>
+
+
+
+
+
+
+</view>
+

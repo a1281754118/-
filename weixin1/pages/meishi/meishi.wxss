@@ -1,0 +1,17 @@
+/* pages/meishi/meishi.wxss */
+.style-1 image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0rpx 0rpx 0rpx 25rpx;
+  border-radius: 100rpx
+}
+.style-1 view{
+  width: 150rpx;
+  height: 110rpx;
+
+}
+.style-1 text{
+  display: block;
+  font-size: 22rpx;
+  text-align: center;
+}

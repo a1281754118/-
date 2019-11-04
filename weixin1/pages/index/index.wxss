@@ -1,0 +1,50 @@
+/* pages/index/index.wxss */
+.touxiang image{
+  width: 150rpx;
+  height: 150rpx;
+  padding: 10rpx;
+  float: left;
+}
+.touxiang{
+  overflow:hidden;
+  background: #ffffff;
+  margin-top: 15rpx;
+}
+.touxiang text{
+ 
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+page{
+  background: rgb(248, 248, 248)
+}
+.xingxi{
+  float: left;
+  margin-top: 50rpx;
+}
+.miaoshu{
+  height: 50rpx;
+}
+.miaoshu{
+  background: #ffffff;
+  margin-top: 15rpx;
+}
+.miaoshu text{
+  font-size: 25rpx;
+  padding-left: 15rpx
+}
+.miaoshu1{
+  height: 48rpx;
+  background: #ffffff;
+  border: 1rpx rgb(248, 248, 248) solid;
+}
+.miaoshu1 text{
+  font-size: 25rpx;
+  padding-left: 15rpx
+}
+.button1{
+  background: rgb(106, 182, 106);
+  margin-top: 50rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+}

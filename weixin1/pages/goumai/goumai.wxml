@@ -1,0 +1,54 @@
+<!--pages/goumai/goumai.wxml-->
+<view>
+<view class="view-style-1">
+<text>门票详情</text>
+</view>
+
+<view class="view-style-2">
+  <text class="text1">{{name}}</text>
+  <view style="margin-left: 10rpx;"><text class="lv">特惠价￥{{price}}</text> <text class="lv">限量抢购</text></view>
+</view>
+
+<view class="view-style-1">
+<text>购票信息</text>
+</view>
+
+<form bindsubmit="formSubmit">
+<view class="view-style-3">
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>购票人</text>
+   <input name='name' bindinput="input" placeholder="请输入购票人姓名" value="{{yonghuname}}"></input>
+   </view>
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>手机号</text>
+   <input name='phone' bindinput="input2"  placeholder="请输入手机号" value="{{moblie}}"></input>
+   </view>
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>使用时间</text>
+   <picker mode="date" value="{{date}}" bindchange="date" >
+    <input bindinput="input4" name="addtime" value="{{date}}" placeholder="请选择日期"></input>
+   </picker>
+  
+   </view>
+   <view>
+   <text space='nbsp'>够买数量</text>
+   <input name="shuliang" bindchange="input3" value="{{quantity}}" ></input>
+   </view>
+</view>
+
+<view class="view-style-4">
+<text>￥{{price1}}</text>
+<button form-type="submit" >确定</button>
+</view>
+</form>
+
+
+
+
+
+
+
+
+
+
+</view>

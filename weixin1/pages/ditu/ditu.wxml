@@ -1,0 +1,11 @@
+<view class="container">
+    <map  class="Map" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" controls="{{controls}}" show-location  markers="{{markers}}" bindcontroltap="backToMyposition"  markers="{{markers}}">
+        <cover-view class="footer">
+        <cover-view class="detail">{{detailAddress}}</cover-view>
+        <cover-image bindtap="ditu" class="img" src="/img/weizhibiaoji (1).png"></cover-image>
+            <cover-view class="detail-1">{{shortAddress}}</cover-view>
+           
+        </cover-view>
+    </map>  
+    
+</view>

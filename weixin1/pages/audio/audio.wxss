@@ -1,0 +1,64 @@
+/* pages/audio/audio.wxss */
+page{
+  background: rgb(248, 248, 248)
+}
+.view-style-1{
+  height: 80rpx;
+  background: #ffffff;
+  overflow: hidden;
+}
+.view-style-1 text{
+  width: 25%;
+  display: table-cell;
+  float: left;
+  text-align: center;
+  height: 80rpx;
+  line-height: 70rpx;
+  border-top: 5rpx solid #ffffff;
+  border-bottom: 1rpx solid rgb(223, 223, 223);
+}
+/* .tui-tabbar-cell:not(:last-child){} */
+.tui-tabbar-cell.tui-active{
+  border-top: 5rpx solid #4cd964;
+  color: #4cd964;
+  }
+ 
+.tui-hide{
+  display: none
+}
+.view-style-2{
+  background: #ffffff;
+  overflow:hidden;
+  margin-top: 5rpx;
+}
+.view-style-2 image{
+   width: 180rpx;
+  height: 120rpx;
+  padding: 10rpx;
+  float: left;
+}
+.view-style-2 text{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: block;
+  font-size: 25rpx;
+  color: rgb(131, 131, 131);
+  padding-left: 10rpx;
+}
+.view-style-2 view{
+  float: right;
+  margin-right: 20rpx
+}
+.view-style-2 view button{
+  background: rgb(103, 219, 180);
+  color: #ffffff;
+  font-size: 25rpx;
+  width: 110rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.zhuangtai{
+  text-align: center;
+  margin-top: 30rpx;
+  color: rgb(131, 131, 131)
+}

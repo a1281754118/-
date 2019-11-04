@@ -1,0 +1,56 @@
+/* pages/ditu/ditu.wxss */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.Map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200rpx;
+    background-color: #fff;
+    line-height: 200rpx
+}
+
+.detail {
+    display: block;
+    width: 400rpx;
+    float: left;
+    padding-left: 35rpx;
+    margin-bottom: 20rpx;
+    padding-top: 40rpx;
+    word-wrap: break-word;
+    font-size: 35rpx;
+    color: #020202;
+}
+.detail-1 {
+    display: block;
+    width: 400rpx;
+    float: left;
+    padding-left: 35rpx;
+    bottom: 30rpx;
+    word-wrap: break-word;
+    font-size: 30rpx;
+    color: #cacaca;
+}
+
+.img{
+  width: 90rpx;
+  height: 90rpx;
+  float: right;
+  padding-right: 35rpx;
+  margin-bottom: 20rpx;
+  padding-top: 40rpx;
+}

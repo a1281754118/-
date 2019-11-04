@@ -1,0 +1,87 @@
+/* pages/fukuan/fukuan.wxss */
+page{
+  background: rgb(248, 248, 248)
+}
+.view-style-1{
+  height: 80rpx;
+  background: seagreen;
+  line-height: 80rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.view-style-2{
+  background: #ffffff;
+  overflow:hidden;
+  margin-top: 20rpx;
+  height: 135rpx;
+  /* line-height: 130rpx; */
+}
+.view-style-2 image{
+   width: 180rpx;
+  height: 120rpx;
+  padding: 10rpx;
+  float: left;
+}
+.view-style-2 text{
+  
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  display: block;
+  font-size: 25rpx;
+  color: rgb(131, 131, 131);
+  padding-left: 10rpx;
+}
+.view-style-2 view{
+  float: right;
+  margin-right: 20rpx;
+}
+.view-style-2 view button{
+  background: rgb(103, 219, 180);
+  color: #ffffff;
+  font-size: 25rpx;
+  width: 110rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.view-style-3{
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+.view-style-3 view{
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  color: rgb(131, 131, 131);
+  font-size: 25rpx;
+}
+.view-style-3 view text{
+  float: right;
+  margin-right: 10rpx;
+}
+.view-style-4{
+  background: #ffffff;
+  margin-top: 20rpx;
+}
+.view-style-4 view{
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  color: rgb(131, 131, 131);
+  font-size: 25rpx;
+}
+.view-style-4 text{
+  float: right;
+  margin-right: 10rpx;
+}
+.view-style-5{
+  position:fixed;z-index:999;left:0;right:0;bottom:0;border-top: 1rpx silver solid;
+  padding: 10rpx;
+}
+.view-style-5 button{
+  float: right;
+  background: seagreen;
+  color: #ffffff;
+  width: 150rpx;
+  height: 80rpx;
+
+}

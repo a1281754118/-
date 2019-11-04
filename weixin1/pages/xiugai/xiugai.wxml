@@ -1,0 +1,58 @@
+<!--pages/xiugai/xiugai.wxml-->
+<view>
+<view class="view-style-1">
+<text>头像</text>
+</view>
+
+<view class="view-style-2" bindtap='changeAvatar'>
+  <view><image src="{{'http://localhost:3000'+url}}"></image></view>
+    <view><text>点击修改头像</text></view>
+    
+</view>
+
+<view class="view-style-1">
+<text>个人信息</text>
+</view>
+
+
+<form bindsubmit="formSubmit">
+<view class="view-style-3">
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>UID</text>
+   <input disabled  value="{{uid}}"style=" color: silver;"></input>
+   </view>
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>昵称</text>
+   <input name="name" bindinput="input2" value="{{name}}"></input>
+   </view>
+   <view style="border-bottom: 1rpx silver solid;">
+   <text space='nbsp'>性别</text>
+    <input wx:if="{{xingbie==1}}" disabled value="男" style=" color: silver;"></input>
+    <input wx:if="{{xingbie==0}}" disabled value="女" style=" color: silver;"></input>
+   </view>
+   <view>
+   <text space='nbsp'>所在地</text>
+   <view style="margin-left: 260rpx;font-size: 26rpx;margin-top: -10rpx;">
+<picker mode='multiSelector' value="{{select}}" range-key="name" range='{{range}}' bindchange="change"  bindcolumnchange="cloumnchange" >
+{{city[select[0]].name}}-{{city[select[0]].city[select[1]].name}}
+</picker>
+  </view>
+   </view>
+</view>
+
+<view class="view-style-4">
+<button form-type='submit'>保存修改</button>
+</view>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+</view>

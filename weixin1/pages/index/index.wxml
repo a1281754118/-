@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<login bindlogined="afterLogin"></login>
+<view>
+<view class="touxiang" bindtap="xiugai">
+<image src="{{'http://localhost:3000'+url}}"></image>
+<view class="xingxi">
+<text style="display: block;">{{name}}</text>
+<text>{{sf}}</text><text>{{cs}}</text> 
+</view>
+</view>
+<view class="miaoshu"><text>成为会员</text></view>
+<view class="miaoshu"><text>我的钱包</text></view>
+<view class="miaoshu"><text>学生认证</text></view>
+<view style="margin-top: 15rpx;">
+<view class="miaoshu1"><text>未发布的交易信息</text></view>
+<view class="miaoshu1"><text>我买到的宝贝</text></view>
+<view class="miaoshu1"><text>我卖出的宝贝</text></view>
+</view>
+
+<view class="miaoshu"><text>票券商核销平台</text></view>
+<button class="button1">联系客服</button>
+</view>

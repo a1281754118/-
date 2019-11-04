@@ -1,0 +1,32 @@
+<!--pages/meishi/meishi.wxml-->
+<view class="section section_gap">
+  <scroll-view class="style-1" scroll-x style="width: 100%;white-space: nowrap" scroll-with-animation="true"
+  scroll-into-view="{{toView}}" >
+  <block wx:for="{{imgUrls}}">
+    <view id="{{'view'+item.Id}}" data-id="{{item.Id}}" class="shuju-style" bindtap="dianji" >
+      <image src="{{'http://localhost:3000'+item.Src}}"  mode="aspectFill"/>
+      <text>{{item.Name}}</text>
+    </view>
+  </block>
+  </scroll-view>
+</view>
+
+<view style="height:65rpx;">
+<input class="input1" type="text" placeholder="搜索"></input>
+</view>
+
+<view class="view1">
+<view  data-id="{{item.Id}}"  bindtap="xiangqing" style="border-top: 1rpx rgb(250, 250, 250) solid;overflow:hidden;" wx:for="{{shuju}}">
+<image class="img1" src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+<view style="float:rigth">
+<text class="text1">{{item.Title}}</text>
+<text class="text1-1">{{item.Content}}</text>
+<text class="text2">余票：{{item.Stock}}</text>
+<text class="text3">￥{{item.Price}}</text>
+<view><text class="lv">特惠票</text> <text class="lv">限量抢购</text></view>
+</view>
+</view>
+
+
+
+</view>

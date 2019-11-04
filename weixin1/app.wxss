@@ -1,0 +1,89 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.slide-image{
+  width: 750rpx;
+  height: 300rpx
+}
+.nav view{
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+}
+.nav view image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 25rpx 0rpx 25rpx;
+  border-radius: 100rpx
+}
+.nav view text{
+  display: block;
+  font-size: 22rpx;
+  text-align: center;
+}
+
+.shezhi1-1{
+  margin: 0rpx 10rpx 10rpx 10rpx;
+  font-size: 25rpx;
+  color: rgba(199, 181, 181, 0.933);
+
+}
+.input1{
+  background: rgb(250, 250, 250);
+  border-radius: 30rpx;
+  padding-left: 20rpx;
+  font-size: 22rpx
+}
+
+
+.img1{
+  padding: 15rpx;
+  width: 250rpx;
+  height: 160rpx;
+  float:left;
+}
+
+.text1{
+  display: block;
+  padding-top: 10rpx;
+  overflow: hidden;
+  width: 350rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30rpx
+}
+.text1-1{
+  display: block;
+  font-size: 23rpx;
+  color: rgba(131, 128, 128, 0.933)
+}
+.text2{
+  color: rgba(180, 170, 170, 0.933);
+  font-size: 23rpx;
+  
+}
+.text3{
+  color: red;
+  float: right;
+  padding-right: 20rpx
+}
+.lv{
+  border: 1px seagreen solid;
+  font-size: 20rpx;
+  margin-right: 15rpx;
+  padding: 5rpx;
+  color: rgb(80, 146, 14)
+}
+.shuju-style{
+  width:200rpx;
+  height:100rpx;
+
+  display: inline-block;
+}

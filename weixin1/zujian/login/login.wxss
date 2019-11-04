@@ -1,0 +1,43 @@
+/* zujian/login/login.wxss */
+.button1{
+  background: #48ec06;
+  color: #ffffff;
+  width: 500rpx;
+  font-size: 25rpx;
+  
+}
+.view-style{
+  background: #ffffff;
+  top: 100rpx;
+  width: 550rpx;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.view-style-1 image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin: 10rpx;
+}
+.view-style-2 {
+    border-top: 1rpx rgb(211, 205, 205) solid;
+    width: 380rpx;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30rpx;
+    font-size: 25rpx;
+    color: rgb(211, 205, 205);
+    padding: 10rpx;
+}
+.view-style-2 text{
+  display: block;
+}
+.view-style-3{
+  padding: 20rpx;
+}
+.text1{
+  display: block;
+  padding-top: 20rpx;
+  font-size: 35rpx;
+}

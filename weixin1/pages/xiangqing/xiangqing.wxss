@@ -1,0 +1,80 @@
+/* pages/xiangqing/xiangqing.wxss */
+.vw-style-1{
+  background: #ffffff;
+  font-size: 32rpx;
+  height: 80rpx;
+  border-bottom: 2rpx rgb(250, 250, 250) solid;
+  padding: 10rpx 0 0 20rpx;
+}
+.vw-style-1 view{
+  float: right;
+  margin-right: 10rpx
+}
+.vw-style-1 view image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.vw-style-1 view text{
+  font-size: 20rpx;
+  display: block;
+}
+.vw-style-2{
+  font-size: 26rpx;
+  color: rgb(211, 211, 211);
+  background: #ffffff;
+  height: 45rpx;
+  line-height: 45rpx
+}
+.vw-style-2 image{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx
+}
+.text{
+ color: #000000;
+ float: right;
+ margin-right: 30rpx;
+}
+page{
+  background: rgb(250, 250, 250)
+}
+.vw-style-3{
+  background: #ffffff;
+  margin-top: 20rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding: 10rpx 0 0 20rpx;
+}
+.vw-style-4{
+  border-top: 2rpx rgb(250, 250, 250) solid;
+   background: #ffffff;
+   height: 100rpx;
+   padding: 10rpx 0 0 20rpx;
+   font-size: 28rpx;
+}
+.vw-style-4 view{
+  float: right;
+}
+.vw-style-4 button{
+  width: 220rpx;
+  height: 50rpx;
+  font-size: 20rpx;
+  background: red;
+  color: #ffffff;
+  margin-right: 10rpx;
+}
+.vw-style-5{
+  background: #ffffff;
+  margin-top: 20rpx;
+  height: 60rpx;
+  font-size: 28rpx;
+  padding: 10rpx 0 0 20rpx;
+  border-bottom: 2rpx rgb(250, 250, 250) solid;
+}
+.vw-style-6{
+  background: #ffffff;
+  padding: 10rpx 0 0 20rpx;
+  height: 470rpx;
+}

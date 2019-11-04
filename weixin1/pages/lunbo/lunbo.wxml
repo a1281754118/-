@@ -1,0 +1,44 @@
+<!--pages/lunbo/lunbo.wxml-->
+<login bindlogined="afterLogin"></login>
+<swiper indicator-dots="{{indicatorDots}}" style="height:300rpx"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  indicator-dots="true"
+  autoplay="true" circular="true" >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{'http://localhost:3000'+item.Src}}" class="slide-image" mode="aspectFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<swiper class="nav">
+ <swiper-item wx:for="{{img}}">
+  <view data-id="{{item.Id}}"  bindtap="meishi4" wx:for="{{item}}">
+  <image src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+  <text>{{item.Name}}</text>
+  </view>
+ </swiper-item>
+</swiper>
+
+<view style="background: #ffffff; margin-top: 10rpx; margin-buttom: 10rpx;height: 100rpx">
+<view class="shezhi1-1"><text>热门</text></view>
+<input  bindinput="input" value="{{keiwode}}" class="input1" confirm-type="search" bindconfirm="search" type="text" placeholder="搜索"   ></input>
+</view>
+
+<view class="view1">
+<view style="border-top: 1rpx rgb(250, 250, 250) solid;overflow:hidden;" data-id="{{item.Id}}" bindtap="xiangqing" wx:for="{{remen}}">
+<image class="img1" src="{{'http://localhost:3000'+item.Src}}" mode="aspectFill"></image>
+<view style="float:rigth">
+<text class="text1">{{item.Title}}</text>
+<text class="text1-1">{{item.Content}}</text>
+<text class="text2">余票：{{item.Stock}}</text>
+<text class="text3">￥{{item.Price}}</text>
+<view><text class="lv">特惠票</text> <text class="lv">限量抢购</text></view>
+</view>
+</view>
+</view>
+
+<view class="tishi">
+ <block wx:if="{{remen==''}}">--没有找到数据--</block>
+  <block wx:if="{{remen.length!=0&&qinqiu==true}}">--我是有底线的--</block>
+  <block wx:if="{{jiazai==true}}">--加载中--</block>
+</view>

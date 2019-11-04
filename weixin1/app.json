@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/lunbo/lunbo",
+    "pages/index/index",
+    "pages/audio/audio",
+    "pages/meishi/meishi",
+    "pages/xiangqing/xiangqing",
+    "pages/goumai/goumai",
+    "pages/xiugai/xiugai",
+    "pages/fukuan/fukuan",
+    "pages/ditu/ditu"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "嘻嘻程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap62.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/lunbo/lunbo",
+        "text": "首页",
+        "iconPath": "/img/shouye11-copy.png",
+        "selectedIconPath": "/img/shouye1-copy.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "订单",
+        "iconPath": "/img/tiaosaoshichang1.png",
+        "selectedIconPath": "/img/tiaosaoshichang.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "个人中心",
+        "iconPath": "/img/user1.png",
+        "selectedIconPath": "/img/user.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
