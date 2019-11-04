@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <style>
+      
+      .button {
+            width: 60px;
+            height: 35px;
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font: 14px/100% Arial, Helvetica, sans-serif;
+            padding: 5px 2px 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+            color: azure;
+            border: solid 1px #0076a3;
+            background: #0095cd;
+            background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+            background: -moz-linear-gradient(top, #00adee, #00678e);
+
+        }
+
+        .button:hover {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
+            /* background: -webkit-gradient(linear, left top, left bottom, from(#00678e), to(#0095cc));
+            background: -moz-linear-gradient(top, #00678e, #0095cc); */
+            box-shadow: 2px 2px 4px #888888;
+        }
+      a{
+        text-decoration: none;
+        color: darkturquoise；
+      }
+      
+      table {
+            margin: 0 auto
+        }
+
+        th,
+        td {
+            width: 250px;
+            height: 40px;
+            text-align: center
+        }
+        .lan {
+            background: #00678e;
+        }
+
+        .bai {
+            background: #d9eef7;
+            color: #000000
+        }
+
+        .luv {
+            background: #47DA95;
+        }
+
+        .hong {
+            background: #E2444C;
+        }
+        /* th {
+            background: #18e4b8;
+        } */
+
+        tr {
+            border-bottom: 1px solid #000000;
+        }
+
+        tr:hover {
+            background: rgb(49, 189, 231);
+        }
+
+        tr:nth-child(2n+1) {
+            background: rgb(49, 189, 231);
+        }
+      </style>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="http://127.0.0.1:3000/channel/news">news</a>
+    <a href="http://127.0.0.1:3000/channel/sport">sport</a>
+    <a href="http://127.0.0.1:3000/channel/music">music</a>
+    <a href="http://127.0.0.1:3000/xiazai">下载</a>
+    <table style="border-collapse: collapse; border-spacing: 0;">
+        <tr>
+            <th><label>账号:<input id="input1" type="text"></label></th>
+            <th> <label>密码:<input id="input2" type="text"></label></th>
+            <th> <label>手机:<input id="input3" type="text"></label></th>
+            <th><button class="button luv">添加</button></th>
+            <th></th>
+
+        </tr>
+        <tr style="background: aqua">
+            <th>id</th><th>账号</th><th>密码</th><th>手机</th><th>操作</th>
+        </tr>
+        <%
+           arr.forEach(item=>{
+         %>
+            <tr>
+                <td>
+                    <%=item.id%>
+                </td>
+                <td>
+                    <%=item.name%>
+                </td>
+                <td>
+                  <%=item.Password%>
+              </td>
+              <td>
+                <%=item.mobile%>
+              </td>
+              <td>
+                <button class="button">删除</button>
+              </td>
+            </tr>
+        <%
+           })
+        %>
+    </table>
+    <script>
+        
+    </script>
+  </body>
+</html>
